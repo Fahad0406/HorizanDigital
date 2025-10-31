@@ -12,6 +12,96 @@
 </head>
 
 <body class="bg-white text-slate-800">
+   <body class="bg-white text-slate-800">
+          <!-- Navigation -->
+    <header class="fixed w-full bg-white/80 backdrop-blur-sm z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 py-4">
+          <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-primary flex items-center">
+              <span class="gradient-text">Horizon</span>
+              <span class="text-slate-800">Digital</span>
+            </a>
+      
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex flex-1 justify-center">
+              <div class="flex items-center space-x-10">
+      
+                <a href="index.html" class="font-medium hover:text-primary transition">Home</a>
+                <a href="about.html" class="font-medium hover:text-primary transition">About</a>
+      
+                <!-- ▼ Services Dropdown Start -->
+                <div class="relative group inline-block">
+    <button
+        class="font-medium hover:text-primary transition flex items-center gap-1 focus:outline-none"
+        tabindex="-1"
+        aria-haspopup="true"
+        aria-expanded="false"
+    >
+        Services
+        <svg class="w-4 h-4 transform transition group-hover:rotate-180" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7" />
+        </svg>
+    </button>
+
+    <!-- Dropdown Menu -->
+    <div
+        class="absolute left-0 top-full mt-3 w-60 bg-white shadow-lg rounded-md border 
+        opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+        translate-y-2 group-hover:translate-y-0 
+        transition-all duration-200 z-50"
+    >
+        <a href="seo.html" class="block px-4 py-2 text-sm hover:bg-blue-50 transition">SEO Services</a>
+        <a href="webservices.html" class="block px-4 py-2 text-sm hover:bg-blue-50 transition">Web Development</a>
+        <a href="smm.html" class="block px-4 py-2 text-sm hover:bg-blue-50 transition">Social Media Marketing</a>
+        <a href="app.html" class="block px-4 py-2 text-sm hover:bg-blue-50 transition">App Development</a>
+    </div>
+</div>
+
+
+                <!-- ▲ Services Dropdown End -->
+      
+                <a href="contact.html" class="font-medium hover:text-primary transition">Contact</a>
+                <a href="faq.html" class="font-medium hover:text-primary transition">FAQ</a>
+              </div>
+            </nav>
+      
+            <!-- Mobile menu button at right -->
+            <div class="md:hidden">
+              <button id="menu-btn" class="block relative h-6 w-6 focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+              </button>
+            </div>
+          </div>
+      
+          <!-- Mobile Navigation -->
+          <div class="md:hidden">
+            <div id="mobile-menu" class="hidden flex-col mt-4 space-y-2">
+      
+              <a href="index.html" class="block px-4 py-2 hover:bg-slate-100 rounded">Home</a>
+              <a href="about.html" class="block px-4 py-2 hover:bg-slate-100 rounded">About</a>
+      
+              <!-- Mobile dropdown-style for Services -->
+              <details class="block px-4 py-2 hover:bg-slate-100 rounded">
+                <summary class="cursor-pointer font-medium">Services</summary>
+                <ul class="ml-4 mt-2 space-y-1 text-sm">
+                  <li><a href="seo.html" class="block hover:text-blue-600">SEO Services</a></li>
+                  <li><a href="webservices.html" class="block hover:text-blue-600">Web Development</a></li>
+                  <li><a href="smm.html" class="block hover:text-blue-600">Social Media</a></li>
+                  <li><a href="app.html" class="block hover:text-blue-600">App Development</a></li>
+                </ul>
+              </details>
+
+              <a href="contact.html" class="block px-4 py-2 hover:bg-slate-100 rounded">Contact</a>
+              <a href="faq.html" class="block px-4 py-2 hover:bg-slate-100 rounded">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </header>
 
   <!-- Header Section -->
   <header class="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-800 text-white pt-24">
@@ -158,3 +248,4 @@
 
 </body>
 </html>
+
